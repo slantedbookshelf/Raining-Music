@@ -103,7 +103,7 @@ raining-music/
 cd raining-music-backend
 # 修改 raining-music-server/src/main/resources/application-dev.yml 中的
 # MySQL / Redis / MinIO / 邮箱 / DashScope API Key 配置
-./mvnw spring-boot:run -pl vibe-music-server
+./mvnw spring-boot:run -pl raining-music-server
 ```
 
 ### 启动用户端
@@ -123,7 +123,3 @@ pnpm dev
 ```
 
 <br>
-
-## Credits
-
-This project is a derivative work based on the original by [Alex-LiSun](https://github.com/Alex-LiSun), licensed under the MIT License. Modifications by zl1nq are also released under the MIT License.
