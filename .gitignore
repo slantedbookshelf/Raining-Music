@@ -1,0 +1,7 @@
+.idea
+others
+
+### Test ###
+**/src/test
+*.drawio
+.zcode

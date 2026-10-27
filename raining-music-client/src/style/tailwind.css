@@ -1,0 +1,103 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* 纸感底色：清新薄荷白（绿色调冷感） */
+    --theme-bg-color: 150 22% 97% / 100%;
+    --dm-background: 150 22% 97% / 96%;
+
+    --background: 150 22% 97%;
+    --foreground: 160 30% 12%;
+
+    --muted: 152 18% 93%;
+    --muted-foreground: 158 10% 42%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 160 30% 12%;
+
+    --card: #ffffff;
+    --card-foreground: 160 30% 12%;
+
+    --border: 152 16% 87%;
+    --input: 152 18% 93%;
+
+    --inactive: 158 10% 42%;
+
+    --heroui-default: 152 16% 87%;
+    --bg-content1: 0 0% 100%;
+
+    /* 菜单悬停：青灰；选中：祖母绿浅底（保留逗号格式，Table.vue 中以 hsl() 任意值引用） */
+    --hover-menu-bg: 152, 22%, 88%, 70%;
+    --active-menu-bg: 158, 64%, 43%, 14%;
+
+    /* 点缀色：祖母绿 */
+    --primary: #10b981;
+    --primary-foreground: 160 30% 12%;
+
+    --secondary: 152 18% 93%;
+    --secondary-foreground: 160 30% 12%;
+
+    --accent: 158 80% 96%;
+    --accent-foreground: 158 64% 36%;
+
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 0 0% 100%;
+
+    --ring: 158 64% 43%;
+
+    --radius: 0.75rem;
+  }
+
+  .dark {
+    --theme-bg-color: 162 26% 9% / 100%;
+    --dm-background: 162 26% 9% / 95%;
+
+    --background: 162 26% 9%;
+    --foreground: 150 30% 96%;
+
+    --muted: 162 22% 17%;
+    --muted-foreground: 156 14% 60%;
+
+    --popover: 162 28% 12%;
+    --popover-foreground: 150 30% 96%;
+
+    --inactive: 156 14% 55% / 78%;
+
+    --heroui-default: 162 20% 22%;
+    --bg-content1: 162 22% 12%;
+
+    --hover-menu-bg: 152, 30%, 60%, 22%;
+    --active-menu-bg: 158, 64%, 43%, 24%;
+
+    --card: rgb(60 99 84 / 16%);
+    --card-foreground: 150 30% 96%;
+
+    --border: 156 16% 40% / 28%;
+    --input: 162 22% 17%;
+
+    --primary: #34d399;
+    --primary-foreground: 150 30% 96%;
+
+    --secondary: 162 22% 17%;
+    --secondary-foreground: 150 30% 96%;
+
+    --accent: 162 28% 18%;
+    --accent-foreground: 150 30% 96%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 150 30% 96%;
+
+    --ring: 158 64% 43%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
